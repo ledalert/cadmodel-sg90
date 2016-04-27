@@ -20,14 +20,12 @@ module sg90_f3() {
 
 						hull() {
 							circle(d=7);
-							translate([-14,0]) circle(d=4);
+							translate([-17,0]) circle(d=4);
 						}
 					}
 
-					for (i=[0:5]) {
-						translate([4+i*2,0]) circle(d=1);
-						translate([-4-i*2,0]) circle(d=1);
-					}
+					for (i=[0:5]) translate([4+i*2,0]) circle(d=1);					
+					for (i=[0:6]) translate([-5-i*2,0]) circle(d=1);
 
 					for (i=[0:1]) {
 						translate([0,4+i*2]) circle(d=1);
